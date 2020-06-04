@@ -1,10 +1,11 @@
 import urllib.request
 from alpha_vantage.timeseries import TimeSeries
 from datetime import date, datetime, timedelta
+import os
 
-API_KEY='<api_key_required>'
-stock_sym = ['<stock symbol>','<stock symbol>']
-ts = TimeSeries(API_KEY)
+apiKey = os.getenv('STOCK_KEY')
+stock_sym = ['GOOGL','FB']
+ts = TimeSeries(apiKey)
 
 
 def weekday():
