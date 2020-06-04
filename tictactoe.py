@@ -39,11 +39,7 @@ def checkScore(board):
             elif user == 'O':
                 oSet.add(position)
                 scoreLogic(oSet)
-
-    print(f"X: {xSet}")         
-    print(f"O: {oSet}")
    
-
 def resetGame(var, board):
     global score
     global xSet
@@ -106,13 +102,11 @@ def mainGame ():
         else:
             print("Choose a different position")
             continue
-        
-        print(score)
+ 
         if score == True:
             print("Winner Winner Chicken Dinner!")
             resume = str(input("You would you like to continue, press Y: "))
             resetGame(resume,dictBoard)
-            print(score)
 
         changeplayer()
 
