@@ -98,7 +98,6 @@ def mainGame ():
             dictBoard[position]=player
             displayBoard(dictBoard)
             checkScore(dictBoard)
-            
         else:
             print("Choose a different position")
             continue
